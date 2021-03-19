@@ -12,7 +12,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		38124EB028C4BEAF185D4A26 /* libPods-ma7kama-ma7kamaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 458489750C5F64B56045FDE9 /* libPods-ma7kama-ma7kamaTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		81AB9BB82411601600AC10FF /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* BootSplash.storyboard */; };
 		CECE2B3F28B65E1AA8416B5F /* libPods-ma7kama.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 435BB5BD696FC9AAD286F931 /* libPods-ma7kama.a */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +41,7 @@
 		458489750C5F64B56045FDE9 /* libPods-ma7kama-ma7kamaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ma7kama-ma7kamaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E300C4272E990A9E40576B1 /* Pods-ma7kama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ma7kama.debug.xcconfig"; path = "Target Support Files/Pods-ma7kama/Pods-ma7kama.debug.xcconfig"; sourceTree = "<group>"; };
 		6111CB69709DC4C50D200D90 /* Pods-ma7kama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ma7kama.release.xcconfig"; path = "Target Support Files/Pods-ma7kama/Pods-ma7kama.release.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ma7kama/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = ma7kama/BootSplash.storyboard; sourceTree = "<group>"; };
 		A16764F725EC185C1DFAC376 /* Pods-ma7kama-ma7kamaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ma7kama-ma7kamaTests.debug.xcconfig"; path = "Target Support Files/Pods-ma7kama-ma7kamaTests/Pods-ma7kama-ma7kamaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -90,7 +90,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				81AB9BB72411601600AC10FF /* BootSplash.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = ma7kama;
@@ -114,7 +114,6 @@
 				A16764F725EC185C1DFAC376 /* Pods-ma7kama-ma7kamaTests.debug.xcconfig */,
 				23BBDA7720C3095A330011E2 /* Pods-ma7kama-ma7kamaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -243,7 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				81AB9BB82411601600AC10FF /* BootSplash.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

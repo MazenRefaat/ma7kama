@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import {I18nManager, StyleSheet} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
@@ -14,9 +14,24 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {LoginScreen} from './src/screens/LoginScreen';
 import {RegisterScreen} from './src/screens/RegisterScreen';
 import {ScreenNames, Screens} from './src/screens';
+import {hide as hideSplashScreen} from 'react-native-bootsplash';
 
 const AuthStack = createStackNavigator();
+
+/**
+ * Root Stack Navigator
+ * |-- Login Screen
+ * |-- Register Screen
+ * |-- Main Screen -> Main component -> contexts -> Main Stack Navigator
+ * |-- |-- home tabs -> Tab Navigator
+ * |-- |-- |-- Court List
+ * |-- |-- |-- Lawyers List
+ * |-- |-- |-- My Account Screen
+ */
 const App: React.FC = () => {
+  useEffect(() => {
+    setTimeout(() => hideSplashScreen({fade: true}), 200);
+  }, []);
   I18nManager.forceRTL(true);
   return (
     <NavigationContainer>
