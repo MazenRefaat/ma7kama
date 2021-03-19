@@ -8,7 +8,7 @@
 
 import React from 'react';
 
-import {StyleSheet} from 'react-native';
+import {I18nManager, StyleSheet} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {LoginScreen} from './src/screens/LoginScreen';
@@ -17,6 +17,7 @@ import {ScreenNames, Screens} from './src/screens';
 
 const AuthStack = createStackNavigator();
 const App: React.FC = () => {
+  I18nManager.forceRTL(true);
   return (
     <NavigationContainer>
       <AuthStack.Navigator
